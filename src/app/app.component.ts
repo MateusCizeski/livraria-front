@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { NavComponent } from "./components/shared/nav/nav.component";
+import { FooterComponent } from "./components/shared/footer/footer.component";
+import { BookstoreAppComponent } from "./components/bookstore-app/bookstore-app.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [NavComponent, FooterComponent, BookstoreAppComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
